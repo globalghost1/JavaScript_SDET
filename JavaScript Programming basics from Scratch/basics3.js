@@ -42,9 +42,17 @@ for(let i = 0;i<scores.length;i++)
 }
 console.log(evenScores)
 let newFilterEvenScores = scores.filter(score=>score%2==0)
-console.log(newFilterEvenScores)
+console.log(newFilterEvenScores) //[12,14,16]=>[36,52,48]
 
+//map
+let mappedArrey=newFilterEvenScores.map(score=>score*3)
+console.log(mappedArrey)
+let totalVal=mappedArrey.reduce((sum,val)=>sum+val,0)
+console.log(totalVal)
+var scores = [12,13,14,16]
 
+let sumValue=scores1.filter(score=>score%2==0).map(score=>score*3).reduce((sum,val)=>sum+val,0)
+console.log(sumValue)
 
 
 
