@@ -19,11 +19,46 @@ console.log(marks)
 console.log(marks.indexOf(100))
 //120 in the array
 console.log(marks.includes(120))
+var sum = 0
 marks.slice(2,5)
 for(let i=0;i<marks.length;i++)
 {
-    console.log(marks[i])
+    //console.log(marks[i])
+    sum = sum + marks[i] //32+40
 }
+console.log(sum)
+//reduce filter map
+let total = marks.reduce((sum,mark)=>sum+mark,0)
+console.log(total)
+var scores = [12,13,14,16]
+//create new array with even numbers of scores array [12,14,16]
+var evenScores
+for(let i = 0;i<scores.length;i++)
+{
+    if (scores [i] %2 == 0)
+    {
+        evenScores.push(scores[i])
+    } 
+}
+console.log(evenScores)
+let newFilterEvenScores = scores.filter(score=>score%2==0)
+console.log(newFilterEvenScores)
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
