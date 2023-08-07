@@ -54,6 +54,19 @@ var scores = [12,13,14,16]
 let sumValue=scores1.filter(score=>score%2==0).map(score=>score*3).reduce((sum,val)=>sum+val,0)
 console.log(sumValue)
 
+let fruiits = ["Banana","mango","pomegrante","apple"]
+
+fruits.sort()
+fruits.reserve()
+
+
+var scores1= [12,13,19,16,14] //9
+console.log(scores1.sort())
+scores1.sort((a,b)=> a-b)
+
+
+
+
 
 
 
