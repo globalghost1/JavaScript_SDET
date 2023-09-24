@@ -14,3 +14,14 @@ let diff = parseInt(nextDate) - parseInt(date)
 console.log(diff)
 diff.toString()
 
+let newQuote = day + "is Funday"
+console.log(newQuote)
+let val = newQuote.indexOf("day",5)
+console.log(val)
+//tuesday is Funday
+let count = 0
+let val = newQuote.indexOf("day")
+while(val!== -1){
+    count++
+    val = newQuote.indexOf("day",val+1)
+}
